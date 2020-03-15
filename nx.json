@@ -1,0 +1,28 @@
+{
+  "npmScope": "myworkspace",
+  "implicitDependencies": {
+    "workspace.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "hello-world": {
+      "tags": []
+    },
+    "hello-world-e2e": {
+      "tags": [],
+      "implicitDependencies": ["hello-world"]
+    },
+    "api": {
+      "tags": []
+    },
+    "api-interfaces": {
+      "tags": []
+    }
+  }
+}
